@@ -2,26 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@layer base {
+  :root {
+    --100: 0deg 0% 0%;
+    --200: 0deg 0% 13%;
+    --300: 0deg 0% 18%;
+    --400: 0deg 0% 33%;
+    --500: 0deg 0% 47%;
+    --600: 0deg 0% 60%;
+    --700: 0deg 0% 100%;
+  }
+
+  [data-theme='light'] {
+    --100: 0deg 0% 95%;
+    --200: 0deg 0% 90%;
+    --300: 0deg 0% 85%;
+    --400: 0deg 0% 80%;
+    --500: 0deg 0% 50%;
+    --600: 0deg 0% 47%;
+    --700: 0deg 0% 25%;
+  }
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+body {
+  @apply text-base text-main-700 font-inter 
+}
+
+.appContainer {
+  @apply w-full px-5 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-8xl mx-auto lg:px-0
+}
+
+.blurBackground {
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.blurBackgroundHero {
+  background-image: url('/images/backgroundHero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.activeSection {
+  @apply border-b flex border-main-700 text-main-700
+}
+
+.projectCardDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.heroHeight {
+  height: calc(100vh - 80px);
+}
+
+@media screen and (min-width: 768px) {
+  .heroHeight {
+    height: calc(100vh - 120px);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--100);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
