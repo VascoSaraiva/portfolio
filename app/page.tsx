@@ -17,6 +17,6 @@ export default async function Home() {
 }
 
 async function getData() {
-  const res = await fetch(process.env.URL + '/api/projects', { cache: "no-store" })
+  const res = await fetch(process.env.URL + '/api/projects', { next : {revalidate: 60 }})
   return (res.status === 200 ? res.json() : null)
 }

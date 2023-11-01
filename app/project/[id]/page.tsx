@@ -138,6 +138,6 @@ const ProjectPage = async({ params }: ProjectPageParams) => {
 export default ProjectPage; 
 
 async function getData(id : string){
-  const res = await fetch(`${process.env.URL}/api/projects/${id}`, { cache: 'no-store' })
+  const res = await fetch(`${process.env.URL}/api/projects/${id}`, { next : {revalidate: 60 }})
   return res.json()
 }
