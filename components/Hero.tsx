@@ -38,10 +38,10 @@ const Hero = async ({data} : AllProjectDataProps) => {
                 <h1 className="font-poppins text-main-300 text-[35px] lg:text-4xl leading-tight font-semibold pb-10 text-opacity-0 bg-clip-text bg-gradient-to-r from-purple-700 via-blue-500 to-green-400 animate-gradient
                 ">
                     Welcome<br />I'm Vasco Saraiva.</h1>
-                <p className="text-xl pb-20 opacity-60">Full Stack Developer</p>
+                <p className="text-xl pb-20 opacity-60">Full Stack Web Developer.</p>
 
                 {/* Download CV  */}
-                <a download="cv" href={'/files/Portfolio.pdf'} className="text-xl border-b pb-0.5 border-main-700 hover:opacity-75 transition-opacity duration-200">Download CV -{">"}</a>
+                <a download="CV Vasco Saraiva" href={'/files/CV.pdf'} className="text-xl border-b pb-0.5 border-main-700 hover:opacity-75 transition-opacity duration-200">📄 Download CV -{">"}</a>
             </div>
 
             <div className="justify-center gap-6 h-fit items-center pb-14 hidden md:flex cursor-default" data-aos='fade-up'>
