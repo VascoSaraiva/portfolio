@@ -19,13 +19,22 @@ const AboutMe = () => {
 
           <section data-aos='fade-up' className='flex flex-col justify-between items-center [&>*]:border [&>*]:border-main-400 [&>*]:rounded-md [&>*]:text-main-600'>
             <article className='pt-6 pb-12 px-6 grow w-full flex flex-col justify-center items-center text-main-600 '>
-              <img className='mb-4 rounded-full bg-main-200' src={'/images/myFace.webp'} alt='My face' width={250} />
+              <Image className='mb-4 rounded-full bg-main-200' unoptimized src={'/images/picture.webp'} alt='My name is Vasco Saraiva and this is my face.' height={250} width={250} />
               <h1 className="font-poppins text-2xl mb-1 text-main-700">Vasco Saraiva</h1>
               <p className='mb-6'>Aveiro, Portugal</p>
 
               {openToWork ?
-                <div className='bg-[#39a36b] py-2 px-4 rounded-md text-white'>
+
+                <div className='bg-[#39a36b] py-2 px-4 rounded-md text-white flex items-center gap-2.5'>
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-white "></span>
+                  </span>
+
+                  <span className='pb-0.5'>
                   Open to work
+                  </span>
+                  
                 </div> :
                 null
               }
