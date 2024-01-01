@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Footer, Navbar, ScrollToTopButton } from '@/components';
 import Provider from '@/components/Provider';
 import { AOSInit } from '@/utils/aos';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata: Metadata = {
