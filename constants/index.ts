@@ -3,7 +3,7 @@ export const contacts = [
     {
         type: "GitHub",
         text: "Visit my GitHub and take a look at the code of the projects I've shown here.",
-        link: "https://github.com/Daznar1",
+        link: "https://github.com/VascoSaraiva",
         buttonText: "Go to Profile ->"
     },
     {

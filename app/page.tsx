@@ -10,7 +10,7 @@ export default async function Home() {
         <AboutMe />
       </div>
       <div id='works'>
-        <Works data={data} />
+        <Works data={data} /> 
       </div>
     </main>
   )
