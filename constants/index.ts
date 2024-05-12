@@ -31,4 +31,4 @@ export const preferredTech = [
     "NextJS", "TailwindCSS", "MySQL", "Typescript", "React", "NodeJS", "MongoDB", "Firebase", "Express", "Figma"
 ]
 
-export const openToWork = true
+export const openToWork = false

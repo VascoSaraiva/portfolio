@@ -53,7 +53,7 @@ const ProjectFilters = ({ clickedFilter, setClickedFilter }: ProjectFilterProps)
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                     >
-                        <Menu.Items className="absolute left-0 mt-4 w-full rounded bg-main-700 shadow-lg">
+                        <Menu.Items className="absolute left-0 mt-4 w-full rounded bg-main-700 shadow-lg z-10">
                             <div className="p-2 [&>button]:px-2 [&>button]:py-2.5">
 
                                 {categories.map((category) => (

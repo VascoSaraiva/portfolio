@@ -9,7 +9,7 @@ import { Fragment } from 'react'
 const Navbar = () => {
 
     return (
-        <nav className="h-20 sticky top-0 bg-main-100 backdrop-blur-xl bg-opacity-60 z-20 border-b border-main-400 flex justify-center items-center">
+        <nav className="h-16 sticky top-0 bg-main-100 backdrop-blur-xl bg-opacity-60 z-20 border-b border-main-400 flex justify-center items-center">
             <div className="flex justify-between items-center appContainer">
 
                 <Link aria-label='About me.' className="hover:opacity-70 tracking-wide font-medium font-poppins transition-opacity duration-200 border-main-100" href='/#aboutMe'>Vasco Saraiva</Link>
